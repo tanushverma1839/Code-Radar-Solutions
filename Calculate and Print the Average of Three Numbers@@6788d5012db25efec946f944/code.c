@@ -9,7 +9,7 @@ int main() {
     scanf("%d %d %d", &a, &b, &c);
 
     // Calculating average
-    average = (a + b + c) / 3.0;
+    average = (a + b + c) / 3;
 
     // Printing the average
     printf("Average: %.2f\n", average);
