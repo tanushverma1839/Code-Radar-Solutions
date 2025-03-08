@@ -1,7 +1,6 @@
 int main() {
     int n;
-    scanf("%d", &n);
-    
+    scanf("%d",&n);
     for (int i = 1; i <= n; i++) {
         // Printing spaces
         for (int j = 1; j <= n - i; j++) {
