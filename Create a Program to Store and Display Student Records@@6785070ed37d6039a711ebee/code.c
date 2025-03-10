@@ -3,7 +3,7 @@
 int main()
 {
     struct student{
-    int rollno;
+    int rolldyno;
     char name[50];
     float attendence;
 };
