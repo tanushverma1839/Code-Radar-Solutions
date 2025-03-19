@@ -4,8 +4,13 @@ int main(){
     scanf("%d",&x);
     for(int i = 0;i < x;i++){
         for(int j = 0;j < x-i-1;j++){
+            printf(" ");
+        }
+        for(int j = 0;j < i;j++){
             printf("*");
         }
-        printf("\n");
+        for(int j = 0;j < i;j++){
+            printf(" ");
+        }
     }
 }
