@@ -14,14 +14,14 @@ int main(){
         }
         printf("\n");
     }
-    for(int i = x;i > 0;i--){
+    for(int i = x;i >= 0;i--){
         for(int j = 0;j < x-i-1;j++){
             printf(" ");
         }
         for(int j = 0;j < i;j++){
             printf("*");
         }
-        for(int j = 0;j < i;j++){
+        for(int j = 0;j <= i;j++){
             printf("*");
         }
         printf("\n");
