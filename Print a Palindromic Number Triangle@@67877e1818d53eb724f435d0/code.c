@@ -1,18 +1,27 @@
-#include<stdio.h>
-int main(){
-    int x;
-    scanf("%d",&x);
-    int l = x-1;
-    for(int i = 0;i < x;i++){
-        for(int j = 0;j < x-i-1;j++){
-            printf(" ");
+#include <stdio.h>
+
+int main() {
+    int levels, i, j, num;
+
+   
+    scanf("%d", &levels);
+
+   
+    for (i = 1; i <= levels; i++) {
+        for (j = 1; j <= levels - i; j++) {
+            printf("  ");
         }
-        for(int j = 1;j <= x;j++){
-            printf("%d",j);
+
+        for (j = 1; j <= i; j++) {
+            printf("%d ", j);
         }
-        for(int j = l;j >= 1;j--){
-            printf("%d",j);
+
+        for (j = i - 1; j >= 1; j--) {
+            printf("%d ", j);
         }
+
         printf("\n");
     }
+
+    return 0;
 }
