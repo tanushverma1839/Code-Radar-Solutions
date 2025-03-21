@@ -12,4 +12,5 @@ int main(){
     for(int k = l;k > 0;k--){
         printf("%d",k);
     }
+    printf("\n");
 }
