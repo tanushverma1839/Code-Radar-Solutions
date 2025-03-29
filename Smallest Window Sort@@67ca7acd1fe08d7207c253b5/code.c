@@ -1,5 +1,4 @@
 #include<stdio.h>
-int x;
 int findUnsortedSubarray(int arr[], int n,int x){
     for(int i = 0;i < n-1;i++){
         for(int j = 0;j < n-i-1;j++){
