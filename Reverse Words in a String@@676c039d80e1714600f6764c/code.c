@@ -1,24 +1,13 @@
-#include <stdio.h>
-#include <string.h>
-
-void reverseString(char str[]) {
-    int left = 0, right = strlen(str) - 1;
-
-    while (left < right) {
-        char temp = str[left];
-        str[left] = str[right];
-        str[right] = temp;
-        left++;
-        right--;
-    }
-}
-
-int main() {
-    char str[100];
-    scanf("%[^\n]",str);    
-    reverseString(str);
-    
-    printf("%s", str);
-    
-    return 0;
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char arr[100];
+    scanf("%[^\n]",arr);
+    int n=strlen(arr);
+    for(int i=0;i<n/2;i++){
+        char temp=arr[i];
+        arr[i]=arr[n-i-1];
+        arr[n-i-1]=temp;
+        }
+        printf("%s",arr);
 }
