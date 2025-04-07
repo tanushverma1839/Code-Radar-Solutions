@@ -11,8 +11,10 @@ int main(){
     for(int i = 0;i < x;i++){
         printf("%d",arr[n-x]);
         printf("\n");
+        x++;
     }
     for(int j = 0;j < n-x;j++){
         printf("%d",arr[j]);
+        printf("\n");
     }
 }
