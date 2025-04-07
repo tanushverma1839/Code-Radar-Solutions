@@ -8,12 +8,11 @@ int main(){
     }
     scanf("%d",&k);
     int x = k;
-    for(int i = 0;i < x;i++){
-        printf("%d",arr[n-x]);
+    for(int i = k;i < n;i++){
+        printf("%d",arr[i+1]);
         printf("\n");
-        x++;
     }
-    for(int j = 0;j < n-x;j++){
+    for(int j = 0;j < k;j++){
         printf("%d",arr[j]);
         printf("\n");
     }
