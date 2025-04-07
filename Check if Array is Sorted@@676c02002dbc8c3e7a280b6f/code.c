@@ -8,5 +8,7 @@ int main(){
     }
     if(arr[0] > arr[1]){
         printf("Not Sorted");
-    }else{printf("Sorted");}
+    }else{
+        printf("Sorted");
+    }
 }
